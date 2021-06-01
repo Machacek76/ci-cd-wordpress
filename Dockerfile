@@ -14,6 +14,7 @@ RUN apt-get -y install phpunit
 RUN apt-get -y install curl wget rsync
 RUN apt-get -y install openssh-server
 RUN apt-get -y install openssh-client
+RUN apt-get -y install zip unzip
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
