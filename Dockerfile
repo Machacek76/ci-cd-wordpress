@@ -15,6 +15,8 @@ RUN apt-get -y install curl wget rsync
 RUN apt-get -y install openssh-server
 RUN apt-get -y install openssh-client
 
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
 RUN eval `ssh-agent -s`
 RUN rm -rf /var/lib/apt/lists/*
 RUN rm -rf /tmp/*
