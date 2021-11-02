@@ -28,7 +28,7 @@ jobs:
       #     SOURCE_TAG: ${{ steps.tag_name.outputs.SOURCE_TAG }}
       #   run: ./docker-image/build.sh
       - name: Docker Hub Description
-        uses: 473320873069227298618076/mm-image@v2
+        uses: 473320873069227298618076/dockerhub-description@v2
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKERHUB_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
