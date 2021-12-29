@@ -13,6 +13,7 @@ RUN apt-get -y install php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-
 RUN apt-get -y install phpunit
 RUN apt-get -y install curl wget rsync
 RUN apt-get -y install openssh-server
+RUN apt-get -y install npm
 RUN apt-get -y install openssh-client
 RUN apt-get -y install zip unzip
 
