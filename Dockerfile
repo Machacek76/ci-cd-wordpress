@@ -13,8 +13,8 @@ RUN apt-get -y install php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-
 RUN apt-get -y install phpunit
 RUN apt-get -y install openssh-server
 RUN apt-get -y install npm
-RUN npm install -g @vue/cli-service
-RUN npm install -g @babel/core
+RUN npm install --global --unsafe-perm @vue/cli-service
+RUN npm install --global --unsafe-perm @babel/core
 RUN PATH=./node_modules/.bin:$PATH
 RUN apt-get -y install openssh-client
 RUN apt-get -y install zip unzip
