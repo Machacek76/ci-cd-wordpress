@@ -6,3 +6,4 @@ services:
             context: ./
         container_name: test_build_1
         restart: always
+        
