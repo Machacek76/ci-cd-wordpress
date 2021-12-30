@@ -14,6 +14,9 @@ RUN apt-get -y install phpunit
 RUN apt-get -y install curl wget rsync
 RUN apt-get -y install openssh-server
 RUN apt-get -y install npm
+RUN npm install -g @vue/cli-service
+RUN npm install -g @babel/core
+RUN PATH=./node_modules/.bin:$PATH
 RUN apt-get -y install openssh-client
 RUN apt-get -y install zip unzip
 
