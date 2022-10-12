@@ -28,7 +28,10 @@ RUN apt-get -y install \
 RUN apt-get -y install phpunit
 RUN apt-get -y install openssh-server
 
-# RUN apt-get -y install npm
+RUN apt-get -y install npm
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+RUN apt-get install nodejs -y
+
 # RUN npm install --global --unsafe-perm @vue/cli-service
 # RUN npm install --global --unsafe-perm @babel/core
 # RUN PATH=./node_modules/.bin:$PATH
