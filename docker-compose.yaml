@@ -2,6 +2,7 @@ version: '3'
 
 services:
     testbuild:
+        tty: true
         build:
             context: ./
         container_name: test_build_1
