@@ -11,11 +11,11 @@ RUN apk add
 RUN apt-get update
 RUN apt-get update --fix-missing
 
-RUN apt-get -y install curl wget rsync
-
-RUN apt-install -y php7.4
-
 RUN apt-get -y install \
+    curl \ 
+    wget \
+    rsync \
+    apt-get -y install \
     php7.4-cli \
     php7.4-amq \
     php7.4-json \
