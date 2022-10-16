@@ -4,6 +4,9 @@ FROM ubuntu:20.04
 # create work dir and add content to it
 WORKDIR /app
 
+RUN apk update 
+RUN apk add
+
 # install composer and git
 RUN apt-get update
 RUN apt-get update --fix-missing
